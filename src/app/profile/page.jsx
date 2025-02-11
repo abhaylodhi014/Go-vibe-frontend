@@ -53,7 +53,7 @@ const userData = {
   }
 
   return (
-    <div className='max-w-5xl mx-auto p-4'>
+    <div className=' mx-auto p-4'>
       {username ? (
         <div className="p-4 space-y-6">
           {/* Profile Section */}
@@ -73,7 +73,7 @@ const userData = {
           </div>
 
           {/* User Posts Section */}
-          <div>
+          <div className='w-full mx-auto'>
             <h2 className="text-xl font-semibold text-gray-700">
               Posts by @{userData.username.split(' ')[0]}
             </h2>
