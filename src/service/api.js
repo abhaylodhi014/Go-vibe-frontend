@@ -5,7 +5,7 @@
 import axios from 'axios';
 import {getAccessToken} from "../utils/common-utils"
 import {API_NOTIFICATION_MESSAGES , SERVICE_URLS}  from '../constants/config';
-const API_URL = "http://localhost:8000/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 
 
