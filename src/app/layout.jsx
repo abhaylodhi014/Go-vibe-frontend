@@ -1,11 +1,11 @@
 "use client"
-// layout.jsx
+
 import Footer from "@/components/Footer";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import { DataProvider } from '../context/DataContext';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useRouter } from "next/navigation";
 const geistSans = Geist({
   variable: "--font-geist-sans",

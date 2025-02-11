@@ -2,8 +2,8 @@
 "use client";
 import React from 'react'
 import { category } from '../constants/data'
-import { useSearchParams } from 'next/navigation';
-import Link from "next/link";
+
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -25,8 +25,7 @@ const sliderSettings = {
 };
 
 const Categories = () => {
-    const searchParams = useSearchParams();
-    const categories = searchParams?.get?.("category") || "";
+   
   return (
     <div className="w-full  px-4 py-6">
     
@@ -34,7 +33,7 @@ const Categories = () => {
       <Slider {...sliderSettings}>
         {category.map((category) => (
           <div key={category.id} className="p-2">
-            <Link href={`/?category=${category.type}`}>
+            
               <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
                 <img
                   src={category.img}
@@ -45,7 +44,7 @@ const Categories = () => {
                   <h3 className="text-lg font-bold text-white">{category.type}</h3>
                 </div> */}
               </div>
-            </Link>
+          
           </div>
         ))}
       </Slider>
